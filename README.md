@@ -27,21 +27,31 @@ Cleans textual data by removing noise such as punctuation, emojis, stopwords, an
 Tokenizes and transforms text for machine learning readiness using established NLP preprocessing techniques.
 
 # Sentiment Classification
+Implemented Models & Comparison
 
-Implements machine learning models trained on labeled sentiment datasets.
+Neural Network (NN) -
 
-Supports binary or multi-class sentiment analysis: positive, negative, neutral.
+Fully connected feed-forward network using vectorized text inputs (TF-IDF or embedding averages).
 
-Ensures robust prediction using vectorization techniques such as TF-IDF or Count Vectorization.
+Strength: Fast training and simple architecture.
 
-Interactive Streamlit Interface
+Limitation: Cannot capture sequential dependencies in text, slightly lower accuracy on nuanced tweets.
 
-Allows users to input or upload text data directly in the web interface.
+Long Short-Term Memory (LSTM) -
 
-Displays real-time sentiment predictions for each input.
+Recurrent neural network capable of learning long-range dependencies.
 
-Provides visual feedback through charts, histograms, or word clouds to highlight sentiment distribution.
+Strength: Excellent at capturing context in sequences, performs well on longer tweets.
 
+Limitation: Higher training time and computational cost compared to NN.
+
+Gated Recurrent Unit (GRU) -
+
+Simplified RNN variant with gating mechanisms like LSTM but fewer parameters.
+
+Strength: Faster than LSTM with similar performance, effective on short to medium-length sequences.
+
+Limitation: May slightly underperform LSTM on very long sequences.
 # Visualization and Interpretation
 
 Graphical representation of sentiment proportions to enable quick interpretation.
