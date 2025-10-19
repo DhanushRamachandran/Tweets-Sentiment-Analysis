@@ -1,11 +1,11 @@
 #  Twitter Sentiment Analysis
-Project Overview
+# Project Overview
 
 The Twitter Sentiment Analysis project is a comprehensive natural language processing (NLP) initiative designed to classify textual data extracted from Twitter into distinct sentiment categories: positive, negative, or neutral. Unlike conventional approaches that rely on pre-packaged APIs, this project is developed entirely using Python, implemented in VS Code, and presented through an interactive Streamlit interface. The system demonstrates the ability to process, clean, analyze, and visualize textual data to derive meaningful insights about public opinion, trends, and overall sentiment patterns inherent in social media conversations.
 
 This project is particularly relevant in the context of digital sociology, market research, and trend analysis, as it provides a framework for interpreting large volumes of textual content efficiently, enabling data-driven decision-making in personal or professional applications.
 
-Motivation
+# Motivation
 
 In the era of social media, Twitter has emerged as a powerful platform where millions of users express opinions, share reactions, and disseminate information in real time. Understanding the sentiment behind these messages is crucial for:
 
