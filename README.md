@@ -60,20 +60,17 @@ User-friendly interface designed for both technical and non-technical users.
 # Technical Stack
 
 Language: Python 3.x
-
 Development Environment: VS Code
-
 Web Interface: Streamlit
-
 Libraries and Frameworks:
-
 NLP: NLTK, SpaCy (optional)
-
 Machine Learning: scikit-learn
-
-Data Manipulation: Pandas, NumPy
-
+Deep Learning: TensorFlow / Keras
+Data Handling: Pandas, NumPy
 Visualization: Matplotlib, Seaborn, WordCloud
+<img width="949" height="452" alt="image" src="https://github.com/user-attachments/assets/5a087cb7-5acb-4c2d-9a82-2ff1085ea775" />
+<img width="889" height="425" alt="image" src="https://github.com/user-attachments/assets/5107d127-d80f-46bf-804f-ea8ca8415847" />
+
 # Workflow
 
 Input Acquisition: User provides textual data either via direct input in Streamlit or through a file upload.
@@ -84,28 +81,20 @@ Feature Extraction: Text is vectorized using TF-IDF or similar representation to
 
 Prediction: Pre-trained sentiment models classify each text into positive, negative, or neutral sentiment.
 
-Visualization: Streamlit interface dynamically renders charts and word clouds for insight visualization.
 
 Interpretation: Users can interactively explore sentiment distributions and understand the dominant themes in the text corpus.
+Model	Accuracy	Precision	Recall	F1-Score	Training Time
+NN	82%	0.81	0.8	0.805	Fast
+LSTM	88%	0.87	0.88	0.875	Moderate
+GRU	87%	0.86	0.87	0.865	Faster than LSTM
+<img width="577" height="233" alt="image" src="https://github.com/user-attachments/assets/81746c56-45df-4dbd-b69d-d15611154d55" />
 
-Significance and Impact
 
-This project showcases how machine learning and NLP can transform raw social media data into actionable insights. Its professional design ensures that the analysis is transparent, reproducible, and interpretable. By providing an interactive interface, the project demonstrates a practical application of data science principles in real-world scenarios:
 
-Academic value: Serves as a case study for NLP and ML workflows.
+# Significance and Impact
 
-Practical utility: Provides a framework for sentiment-driven decision making without relying on external APIs.
-
-Technical proficiency: Demonstrates end-to-end project development, from preprocessing and modeling to interactive deployment using Streamlit.
-
-# Future Enhancements
-
-Add multi-language support for global social media monitoring.
-
-Integrate temporal analysis to track sentiment trends over time.
-
-Enhance Streamlit interface with real-time updates and dashboards.
+By integrating deep learning architectures (LSTM and GRU), this project demonstrates the ability to capture sequence-level information in text, which is often missed by simple feed-forward NNs
 
 # Conclusion
 
-The Twitter Sentiment Analysis project exemplifies a fully self-contained NLP system for extracting and interpreting public opinion from textual data. By combining robust preprocessing, reliable machine learning, and a highly interactive interface, this project highlights the practical relevance of data science in analyzing social media trends. It demonstrates that even without API integration, a personal project can provide meaningful insights and an engaging user experience, bridging the gap between raw data and actionable knowledge.
+This project demonstrates a robust, self-contained Twitter Sentiment Analysis system capable of classifying textual data with high accuracy using NN, LSTM, and GRU architectures. By leveraging sequence-aware deep learning models, it captures the nuances of human language in social media posts, providing actionable insights into public opinion. The interactive Streamlit interface ensures the project is accessible, interpretable, and practical, making it an excellent example of applied NLP and deep learning in personal projects.
